@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-light: 255 255 255;
+    --background-dark: 13 17 23;
+    --text-light: 36 41 47;
+    --text-dark: 240 246 252;
+    --accent-light: 9 105 218;
+    --accent-dark: 88 166 255;
+    --muted-light: 101 109 118;
+    --muted-dark: 139 148 158;
+    --surface-light: 246 248 250;
+    --surface-dark: 33 38 45;
+
+    --background: var(--background-light);
+    --text: var(--text-light);
+    --accent: var(--accent-light);
+    --muted: var(--muted-light);
+    --surface: var(--surface-light);
+  }
+
+  .dark {
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+    --accent: var(--accent-dark);
+    --muted: var(--muted-dark);
+    --surface: var(--surface-dark);
+  }
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-background text-text font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono;
+  }
+
+  code {
+    @apply font-mono text-code;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Timeline custom classes */
+  .timeline-vertical {
+    /* Vertical timeline styles for mobile */
+  }
+
+  .timeline-horizontal {
+    /* Horizontal timeline styles for desktop */
+  }
+}
+
+/* Blog Content Styles - GitHub Markdown Viewer Inspired */
+@layer components {
+  .blog-content {
+    @apply text-text leading-relaxed;
+  }
+
+  /* Headings */
+  .blog-content h1 {
+    @apply text-3xl font-bold font-mono mb-6 mt-8 text-text border-b border-surface pb-2;
+  }
+
+  .blog-content h2 {
+    @apply text-2xl font-semibold font-mono mb-4 mt-8 text-text border-b border-surface pb-2;
+  }
+
+  .blog-content h3 {
+    @apply text-xl font-semibold font-mono mb-3 mt-6 text-text;
+  }
+
+  .blog-content h4 {
+    @apply text-lg font-semibold font-mono mb-3 mt-6 text-text;
+  }
+
+  .blog-content h5 {
+    @apply text-base font-semibold font-mono mb-2 mt-4 text-text;
+  }
+
+  .blog-content h6 {
+    @apply text-sm font-semibold font-mono mb-2 mt-4 text-text;
+  }
+
+  /* Paragraphs and spacing */
+  .blog-content p {
+    @apply mb-4 text-base leading-7 text-text;
+  }
+
+  .blog-content p:last-child {
+    @apply mb-0;
+  }
+
+  /* Lists */
+  .blog-content ul,
+  .blog-content ol {
+    @apply mb-4 pl-6 text-base leading-7 text-text;
+  }
+
+  .blog-content ul {
+    @apply list-disc;
+  }
+
+  .blog-content ol {
+    @apply list-decimal;
+  }
+
+  .blog-content li {
+    @apply mb-1;
+  }
+
+  .blog-content li:last-child {
+    @apply mb-0;
+  }
+
+  .blog-content ul ul,
+  .blog-content ol ol,
+  .blog-content ul ol,
+  .blog-content ol ul {
+    @apply mt-2 mb-0;
+  }
+
+  /* Blockquotes */
+  .blog-content blockquote {
+    @apply border-l-4 border-accent bg-surface/50 pl-4 py-2 mb-4 italic text-muted;
+  }
+
+  .blog-content blockquote p {
+    @apply mb-0;
+  }
+
+  /* Code blocks */
+  .blog-content pre {
+    @apply rounded-lg p-4 mb-4 overflow-x-auto shadow-sm;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    background: #fafbfc;
+    border: 1px solid #d0d7de;
+    border-left: 4px solid var(--accent);
+  }
+
+  .dark .blog-content pre {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+    background: #2d3748;
+    border: 1px solid #4a5568;
+    border-left: 4px solid var(--accent);
+  }
+
+  .blog-content pre code {
+    @apply text-sm font-mono text-text bg-transparent p-0;
+  }
+
+  /* Inline code */
+  .blog-content code:not(pre code) {
+    @apply bg-surface border border-surface rounded px-1.5 py-0.5 text-sm font-mono text-text;
+  }
+
+  /* Links */
+  .blog-content a {
+    @apply text-accent hover:text-accent/80 underline transition-colors;
+  }
+
+  /* Images */
+  .blog-content img {
+    @apply max-w-full h-auto rounded-lg border border-surface mb-4;
+  }
+
+  /* Tables */
+  .blog-content table {
+    @apply w-full border-collapse border border-surface mb-4;
+  }
+
+  .blog-content th,
+  .blog-content td {
+    @apply border border-surface px-3 py-2 text-left text-sm;
+  }
+
+  .blog-content th {
+    @apply bg-surface font-semibold text-text;
+  }
+
+  .blog-content td {
+    @apply text-text;
+  }
+
+  /* Horizontal rules */
+  .blog-content hr {
+    @apply border-0 border-t border-surface my-8;
+  }
+
+  /* Emphasis */
+  .blog-content strong {
+    @apply font-semibold text-text;
+  }
+
+  .blog-content em {
+    @apply italic text-text;
+  }
+
+  /* Strikethrough */
+  .blog-content del {
+    @apply line-through text-muted;
+  }
+
+  /* Definition lists */
+  .blog-content dl {
+    @apply mb-4;
+  }
+
+  .blog-content dt {
+    @apply font-semibold text-text mb-1;
+  }
+
+  .blog-content dd {
+    @apply ml-4 mb-2 text-text;
+  }
+
+  /* Task lists */
+  .blog-content input[type="checkbox"] {
+    @apply mr-2;
+  }
+
+  /* Syntax highlighting for code blocks */
+  .blog-content pre {
+    @apply relative;
+  }
+
+  .blog-content pre::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent/20 to-accent/10 rounded-t-lg;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-content h1 {
+      @apply text-2xl;
+    }
+
+    .blog-content h2 {
+      @apply text-xl;
+    }
+
+    .blog-content h3 {
+      @apply text-lg;
+    }
+
+    .blog-content pre {
+      @apply text-xs;
+    }
+
+    .blog-content table {
+      @apply text-xs;
+    }
+
+    .blog-content th,
+    .blog-content td {
+      @apply px-2 py-1;
+    }
+  }
+
+  /* Dark mode specific adjustments */
+  .dark .blog-content pre {
+    @apply bg-surface/80;
+  }
+
+  .dark .blog-content blockquote {
+    @apply bg-surface/30;
+  }
+
+  .dark .blog-content code:not(pre code) {
+    @apply bg-surface/80;
+  }
+}

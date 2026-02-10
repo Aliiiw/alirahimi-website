@@ -1,0 +1,10 @@
+export { heroContent, type HeroContent, type CtaButton } from './hero';
+export { contactContent } from './contact';
+export { themeConfig, type ThemeConfig } from './theme';
+export { professionalMilestones, type ProfessionalMilestone } from './professional-journey';
+export { projectsContent, type Project, type ProjectsContent } from './projects';
+export { technicalExpertiseContent, type TechnicalExpertiseContent, type SkillCategory, type TechnicalSkill } from './technical-expertise';
+export { footerContent } from './footer';
+export { iconConfig, type IconData, type IconConfig } from './icon';
+export { blogFiltersContent, type BlogFiltersData } from './blog-filters';
+export { blogPageContent, type BlogPageContent } from './blog-page'; 
