@@ -14,11 +14,11 @@ export default async function Home() {
 
       <HeroSection {...heroContent} />
 
-      <FeaturedProjects projects={projectsContent.featured} />
+      <ProfessionalJourney milestones={professionalMilestones} />
 
       <TechnicalExpertise categories={technicalExpertiseContent.categories} />
 
-      <ProfessionalJourney milestones={professionalMilestones} />
+      <FeaturedProjects projects={projectsContent.featured} />
 
       <BlogPreviewSection posts={posts} />
 

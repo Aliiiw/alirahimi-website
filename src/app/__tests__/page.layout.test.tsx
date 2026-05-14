@@ -32,15 +32,22 @@ describe('Home Page Layout', () => {
     
     const sections = [
       'hero-section',
-      'featured-projects-section', 
-      'technical-expertise-section',
       'professional-journey-section',
+      'technical-expertise-section',
+      'featured-projects-section',
       'blog-preview-section',
       'contact-section'
     ]
     
     sections.forEach(sectionId => {
       expect(screen.getByTestId(sectionId)).toBeInTheDocument()
+    })
+
+    const sectionElements = sections.map(sectionId => screen.getByTestId(sectionId))
+    sectionElements.slice(0, -1).forEach((section, index) => {
+      expect(section.compareDocumentPosition(sectionElements[index + 1])).toBe(
+        Node.DOCUMENT_POSITION_FOLLOWING
+      )
     })
   })
 
