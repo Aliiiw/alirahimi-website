@@ -49,3 +49,30 @@ Main portfolio content lives in:
 - `src/content/posts/`
 
 The downloadable CV is served from `public/AliRahimiCV.pdf`.
+
+## Adding Blog Posts
+
+Blog posts live in `src/content/posts/` as Markdown files. Use a kebab-case filename, for example:
+
+```txt
+src/content/posts/my-new-android-post.md
+```
+
+Each post should start with YAML frontmatter:
+
+```md
+---
+title: "My New Android Post"
+date: 2026-05-15T10:00:00+02:00
+excerpt: "A short summary that appears on the blog list and homepage preview."
+tags: ["android", "kotlin", "jetpack-compose"]
+category: "Android"
+published: true
+---
+
+# My New Android Post
+
+Write the post content here.
+```
+
+After adding a post, run `npm run build`, then commit and push to deploy through GitHub Actions.
