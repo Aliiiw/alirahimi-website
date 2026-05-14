@@ -4,9 +4,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from "next/image";
+import { ArrowRight, Download } from "lucide-react";
 import { Button, Text, Typewriter, CenteredTypewriter } from "@/components/micro";
 import { HeroContent } from "@/content";
-import avatarSrc from "../../../public/avatar.png";
+import avatarSrc from "../../../public/avatar.jpg";
 interface HeroSectionProps extends HeroContent {
   className?: string;
 }
@@ -16,22 +17,9 @@ const renderIcon = (iconName?: string) => {
   
   switch (iconName) {
     case "arrow-right":
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M5 12h14" />
-          <path d="m12 5 7 7-7 7" />
-        </svg>
-      );
+      return <ArrowRight size={20} aria-hidden="true" />;
+    case "download":
+      return <Download size={20} aria-hidden="true" />;
     default:
       return null;
   }
@@ -81,7 +69,8 @@ export function HeroSection({
               src={avatarSrc}
               alt={avatarAlt}
               width={128}
-              className="rounded-full object-cover border-4 border-accent"
+              height={128}
+              className="w-32 h-32 rounded-full object-contain bg-white border-4 border-accent"
               priority
             />
           </motion.div>
@@ -197,7 +186,7 @@ export function HeroSection({
         >
           <div
             data-testid="scroll-indicator"
-            className="absolute bottom-8 animate-bounce text-[#656d76] dark:text-[#8b949e] font-sans text-sm"
+            className="hidden sm:block absolute bottom-8 animate-bounce text-[#656d76] dark:text-[#8b949e] font-sans text-sm"
           >
             Scroll to explore ↓
           </div>

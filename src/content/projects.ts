@@ -11,34 +11,39 @@ export interface ProjectsContent {
 export const projectsContent: ProjectsContent = {
     featured: [
         {
-            title: "CCPTools Ecosystem",
-            description: "Microservices platform with 6 interconnected projects serving 1000+ weekly active users. Features React Native mobile apps (iOS/Android) with offline-first PouchDB sync, and React admin panel with RJSF dynamic form generation.",
-            technologies: ["React Native", "Node.js", "Next.js", "MongoDB", "Docker", "Kubernetes", "PouchDB/CouchDB", "RJSF"]
+            title: "Jahat",
+            description: "Seller-side insurance platform for managing car and life insurance workflows. Built modular policy management, order tracking, personalized plan selection, archiving, charting, and vendor dashboard experiences.",
+            technologies: ["Kotlin", "Jetpack Compose", "Modular Architecture"]
         },
         {
-            title: "Healthcare Management Platform",
-            description: "Enterprise platform digitizing workflows for 500+ clinics with 2000+ concurrent users. Built offline-first PWAs using jQuery, Ajax, and IndexedDB for mission-critical operations in low-connectivity regions.",
-            technologies: ["ASP.NET", "C#", "jQuery", "Express.js", "SQL Server", "IndexedDB", "Ajax", "PWA"]
+            title: "Fundz",
+            description: "Market monitoring app for investors to track stock performance, real-time news, market movement alerts, interactive heatmaps, advanced filtering, and multi-chart technical analysis.",
+            technologies: ["Kotlin", "XML", "Coroutines", "Flow"]
         },
         {
-            title: "Telegram Bot Moderation System",
-            description: "High-performance Windows Service handling 1,000 messages/second for 400+ group admins managing 500,000+ users. Features real-time content moderation, user management, and automated spam detection.",
-            technologies: ["C#/.NET", "Windows Service", "Telegram API", "SQL Server", "Real-time Processing"]
+            title: "Fast Bourse",
+            description: "Stock market information and social platform redesigned for better performance, scalability, and user experience. Refactored the app around MVVM and improved data handling to double processing speed.",
+            technologies: ["Kotlin", "XML", "MVVM"]
         },
         {
-            title: "ERP Form/Workflow Generator",
-            description: "Dynamic form generation system enabling code-free customization for 6 organizations. Built form generators with runtime form creation, workflow automation, and database schema generation.",
-            technologies: ["VB6", "C#", "ASP.NET", "Dynamic Form Generation", "Workflow Engine"]
+            title: "Agah Educational Platform",
+            description: "Video-based stock market learning application. Resolved production issues around caching and downloads, refactored the architecture with MVVM, and improved offline media reliability.",
+            technologies: ["Kotlin", "XML", "MVVM", "Caching"]
         },
         {
-            title: "GIS Digital Atlas Systems",
-            description: "National mapping projects. Developed using MapObject2 with ArcGIS data models, featuring dynamic form generation for GIS data entry. First project to implement runtime form generation for complex geographical data management.",
-            technologies: ["VB6", "MapObject2", "ArcGIS", "MS Access", "GIS"]
+            title: "CPS",
+            description: "Customer service portal delivered for Android and iOS. Built secure account management, real-time service status, shipment and cargo tracking, and centralized access to transactions and service data.",
+            technologies: ["Kotlin", "XML", "Swift", "SwiftUI"]
         },
         {
-            title: "React Native Form Generator",
-            description: "Formik-based form generator for React Native enabling dynamic form creation without coding. Integrates Yup validation, state management, and event handling.",
-            technologies: ["React Native", "Formik", "Yup", "Preact", "WebView", "Quill Editor"]
+            title: "Digikala Clone",
+            description: "Full-featured e-commerce application inspired by Digikala. Implemented shopping flows, scalable architecture, dark and light themes, and bilingual Persian/English support with a modern Compose UI.",
+            technologies: ["Kotlin", "Jetpack Compose", "Material Design"]
+        },
+        {
+            title: "Battery Manager",
+            description: "Battery monitoring application with device health metrics, usage and power-consumption analysis, intelligent charging notifications, and performance tools for long-term battery efficiency.",
+            technologies: ["Kotlin", "XML", "Notifications"]
         }
     ]
 };

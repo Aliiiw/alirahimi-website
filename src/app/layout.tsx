@@ -16,34 +16,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Attarchi - Senior Full-Stack Developer | React, Node.js, Mobile",
-  description: "Professional portfolio of Attarchi, a Senior Full-Stack Developer specializing in React, Node.js, TypeScript, and mobile app development. Based in Turkey with expertise in modern web technologies and offline-first architectures.",
-  keywords: "Full-Stack Developer, React, Node.js, TypeScript, Mobile Apps, Turkey, JavaScript, Frontend, Backend, Web Development, Software Engineer",
-  authors: [{ name: "Attarchi" }],
-  creator: "Attarchi",
-  publisher: "Attarchi",
+  title: "Ali Rahimi - Senior Android Engineer | Kotlin, Jetpack Compose",
+  description: "Professional portfolio of Ali Rahimi, a Senior Android Engineer specializing in Kotlin, Jetpack Compose, Kotlin Multiplatform readiness, Clean Architecture, and high-performance mobile apps.",
+  keywords: "Ali Rahimi, Senior Android Engineer, Android Developer, Kotlin, Jetpack Compose, Kotlin Multiplatform, Clean Architecture, MVVM, MVI, Mobile Apps, France",
+  authors: [{ name: "Ali Rahimi" }],
+  creator: "Ali Rahimi",
+  publisher: "Ali Rahimi",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://attarchi.github.io'),
+  metadataBase: new URL('https://alirahimi.dev'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Attarchi - Senior Full-Stack Developer | React, Node.js, Mobile",
-    description: "Professional portfolio of Attarchi, a Senior Full-Stack Developer specializing in React, Node.js, TypeScript, and mobile app development. Based in Turkey with expertise in modern web technologies.",
-    url: 'https://attarchi.github.io',
-    siteName: 'Attarchi Portfolio',
+    title: "Ali Rahimi - Senior Android Engineer | Kotlin, Jetpack Compose",
+    description: "Professional portfolio of Ali Rahimi, a Senior Android Engineer specializing in Kotlin, Jetpack Compose, Clean Architecture, and high-performance mobile apps.",
+    url: 'https://alirahimi.dev',
+    siteName: 'Ali Rahimi Portfolio',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Attarchi - Senior Full-Stack Developer | React, Node.js, Mobile",
-    description: "Professional portfolio of Attarchi, a Senior Full-Stack Developer specializing in React, Node.js, TypeScript, and mobile app development.",
-    creator: '@attarchi',
+    title: "Ali Rahimi - Senior Android Engineer | Kotlin, Jetpack Compose",
+    description: "Professional portfolio of Ali Rahimi, a Senior Android Engineer specializing in Kotlin, Jetpack Compose, and modern Android architecture.",
   },
   robots: {
     index: true,
@@ -55,9 +54,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code',
   },
 };
 

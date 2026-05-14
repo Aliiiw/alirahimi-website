@@ -272,14 +272,14 @@ describe("ProfessionalJourney", () => {
   it("shows only visible milestones in slideshow mode", () => {
     render(<ProfessionalJourney milestones={manyMilestones} />);
     
-    // Should show first 3 milestones initially
-    expect(screen.getByText("Junior Developer")).toBeInTheDocument();
-    expect(screen.getByText("Mid-level Developer")).toBeInTheDocument();
+    // Should show the most recent 3 milestones initially
+    expect(screen.getByText("Engineering Manager")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Tech Lead" })).toBeInTheDocument();
     expect(screen.getByText("Senior Developer")).toBeInTheDocument();
     
-    // Should not show the last 2 milestones initially
-    expect(screen.queryByText("Tech Lead")).not.toBeInTheDocument();
-    expect(screen.queryByText("Engineering Manager")).not.toBeInTheDocument();
+    // Should not show the older 2 milestones initially
+    expect(screen.queryByText("Mid-level Developer")).not.toBeInTheDocument();
+    expect(screen.queryByText("Junior Developer")).not.toBeInTheDocument();
   });
 
   it("shows mobile navigation buttons when in mobile view", () => {

@@ -1,16 +1,16 @@
 export const contactContent = {
-    status: "Available for new opportunities",
-    location: "Istanbul, Turkey (UTC+3)",
-    email: "attarchi@me.com",
-    linkedinUrl: "https://linkedin.com/in/ryan-attarchi",
-    githubUrl: "https://github.com/attarchi",
+    status: "Open to senior Android opportunities",
+    location: "France (CET/CEST) • Open to relocate",
+    email: "aliirahimioriginal@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/in/alii-rahimi/",
+    githubUrl: "https://github.com/Aliiiw",
     responseTime: "Usually within 24 hours",
-    availabilityType: "Full-time, Contract, Consulting",
+    availabilityType: "Full-time Android roles, remote or relocation",
     sectionTitle: "Let's Work Together",
-    sectionSubtitle: "Available for exciting projects and opportunities",
+    sectionSubtitle: "Available for mobile engineering teams building reliable Android products",
     contactInfoTitle: "Contact Information",
     formTitle: "Send Message",
     formDescription: "Feature coming soon! This form will be available when the site goes live.",
     formspreeId: "mpwlwpnw",
     successMessage: "Thanks for your message! I'll get back to you soon."
-}; 
+};

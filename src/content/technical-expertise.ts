@@ -16,98 +16,106 @@ export interface TechnicalExpertiseContent {
 }
 
 export const technicalExpertiseContent: TechnicalExpertiseContent = {
-    categories: [
-        {
-            title: "Frontend",
-            skills: [
-                { name: "React", proficiency: 90, years: 7, icon: "react" },
-                { name: "Next.js", proficiency: 85, years: 4, icon: "nextjs" },
-                { name: "TypeScript", proficiency: 99, years: 7, icon: "typescript" },
-                { name: "Blazor", proficiency: 70, years: 4, icon: "blazor" },
-                { name: "Formik", proficiency: 90, years: 4, icon: "formik" },
-            ],
-            others: [
-                { name: "JavaScript", icon: "javascript" },
-                { name: "Chakra UI", icon: "chakra-ui" },
-                { name: "Ant Design", icon: "antdesign" },
-                { name: "RJSF", icon: "json-schema" },
-                { name: "Preact Signals", icon: "preact" },
-                { name: "Tailwind CSS", icon: "tailwind" },
-                { name: "Bootstrap", icon: "bootstrap" }
-            ]
-        },
-        {
-            title: "Backend",
-            skills: [
-                { name: "Node.js", proficiency: 90, years: 8, icon: "nodejs" },
-                { name: "C#/.NET", proficiency: 95, years: 14, icon: "csharp" },
-                { name: "SQL Server", proficiency: 70, years: 15, icon: "sql" },
-                { name: "MongoDB", proficiency: 80, years: 6, icon: "mongodb" },
-                { name: "CouchDB", proficiency: 85, years: 3, icon: "couchdb" }
-            ],
-            others: [
-                { name: "Prisma", icon: "prisma" },
-                { name: "PouchDB", icon: "pouchdb" },
-                { name: "PostgreSQL", icon: "postgresql" },
-                { name: "Entity Framework", icon: "dotnet" },
-                { name: "Express.js", icon: "express-js" },
-                { name: "AJV", icon: "ajv" }
-            ]
-        },
-        {
-            title: "DevOps",
-            skills: [
-                { name: "Docker", proficiency: 85, years: 4, icon: "docker" },
-                { name: "Kubernetes", proficiency: 30, years: 3, icon: "kubernetes" },
-                { name: "CI/CD", proficiency: 50, years: 5, icon: "git" },
-                { name: "Linux/Windows Server", proficiency: 90, years: 15, icon: "linux" },
-                { name: "GitHub Actions", proficiency: 90, years: 8, icon: "github" }
-            ],
-            others: [
-                { name: "Azure Pipelines", icon: "azure" },
-                { name: "Sentry", icon: "sentry" },
-                { name: "Redis", icon: "redis" },
-                { name: "Vercel", icon: "vercel" },
-                { name: "Helm Charts", icon: "helm" }
-            ]
-        },
-        {
-            title: "Mobile",
-            skills: [
-                { name: "React Native (Bare)", proficiency: 90, years: 3, icon: "react" },
-                { name: "Expo", proficiency: 60, years: 1, icon: "expo" },
-                { name: "React Navigation", proficiency: 90, years: 3, icon: "react-navigation" },
-                { name: "Kotlin", proficiency: 20, years: 0.5, icon: "kotlin" },
-                { name: "Swift", proficiency: 10, years: 0.5, icon: "swift" },
-            ],
-            others: [
-                { name: "Java", icon: "java" },
-                { name: "iOS", icon: "ios" },
-                { name: "Android", icon: "android" },
-            ]
-        },
-        {
-            title: "Testing & Analytics",
-            skills: [
-                { name: "Jest", proficiency: 95, years: 7, icon: "jest" },
-                { name: "Cypress", proficiency: 60, years: 2, icon: "cypress" },
-                { name: "Google Analytics", proficiency: 70, years: 8, icon: "google-analytics" },
-                { name: "E2E Testing", proficiency: 75, years: 3, icon: "testing" },
-                { name: "Unit/Integration Testing", proficiency: 90, years: 10 },
-                { name: "TDD", proficiency: 80, years: 5 }
-            ],
-            others: []
-        },
-        {
-            title: "Legacy & Other",
-            skills: [
-                { name: "VB6", proficiency: 95, years: 6 },
-                { name: "ASP.NET", proficiency: 85, years: 10 },
-                { name: "jQuery", proficiency: 90, years: 12 },
-                { name: "GIS/MapObject2", proficiency: 60, years: 3 },
-                { name: "VBA", proficiency: 60, years: 10 },
-                { name: "Ajax", proficiency: 75, years: 10 }
-            ],
-        }
-    ]
+  categories: [
+    {
+      title: "Languages & Frameworks",
+      skills: [
+        { name: "Kotlin", proficiency: 90, years: 4, icon: "kotlin" },
+        { name: "Java", proficiency: 80, years: 4, icon: "java" },
+        { name: "Kotlin Multiplatform", proficiency: 65, years: 1, icon: "kotlin" },
+      ],
+    },
+
+    {
+      title: "Android Development",
+      skills: [
+        { name: "Android SDK", proficiency: 90, years: 4, icon: "android" },
+        { name: "Jetpack Compose", proficiency: 90, years: 3, icon: "material" },
+        { name: "Android Jetpack Libraries", proficiency: 85, years: 4, icon: "android" },
+        { name: "Material Design", proficiency: 75, years: 4, icon: "material" },
+        { name: "Navigation Component", proficiency: 75, years: 4, icon: "android" },
+        { name: "ViewModel", proficiency: 85, years: 4, icon: "android" },
+        { name: "LiveData", proficiency: 80, years: 4, icon: "android" },
+        { name: "Room", proficiency: 80, years: 4, icon: "android" },
+        { name: "DataStore", proficiency: 75, years: 3, icon: "android" },
+        { name: "SharedPreferences", proficiency: 80, years: 4, icon: "android" },
+        { name: "Lottie", proficiency: 70, years: 3, icon: "android" },
+        { name: "Glide", proficiency: 75, years: 3, icon: "android" },
+        { name: "Firebase", proficiency: 75, years: 3, icon: "firebase" },
+        { name: "Sentry", proficiency: 70, years: 2, icon: "sentry" },
+      ],
+    },
+
+    {
+      title: "Architecture & Patterns",
+      skills: [
+        { name: "Clean Architecture", proficiency: 85, years: 4, icon: "architecture" },
+        { name: "MVVM", proficiency: 85, years: 4, icon: "architecture" },
+        { name: "MVI", proficiency: 80, years: 3, icon: "architecture" },
+        { name: "MVP", proficiency: 75, years: 3, icon: "architecture" },
+        { name: "MVC", proficiency: 70, years: 3, icon: "architecture" },
+        { name: "OOP", proficiency: 85, years: 4, icon: "java" },
+        { name: "Design Patterns", proficiency: 80, years: 4, icon: "architecture" },
+        { name: "Hilt", proficiency: 80, years: 3, icon: "android" },
+        { name: "Koin", proficiency: 75, years: 3, icon: "kotlin" },
+      ],
+    },
+
+    {
+      title: "Networking & APIs",
+      skills: [
+        { name: "Retrofit", proficiency: 80, years: 4, icon: "api" },
+        { name: "OkHttp", proficiency: 80, years: 4, icon: "api" },
+        { name: "REST APIs", proficiency: 80, years: 4, icon: "api" },
+        { name: "GraphQL", proficiency: 65, years: 2, icon: "api" },
+        { name: "GSON", proficiency: 85, years: 4, icon: "json-schema" },
+        { name: "JSON", proficiency: 85, years: 4, icon: "json-schema" },
+      ],
+    },
+
+    {
+      title: "Asynchronous Programming",
+      skills: [
+        { name: "Kotlin Coroutines", proficiency: 85, years: 4, icon: "kotlin" },
+        { name: "Flow", proficiency: 80, years: 4, icon: "async" },
+        { name: "RxJava", proficiency: 60, years: 2, icon: "java" },
+        { name: "Multithreading", proficiency: 70, years: 3, icon: "async" },
+      ],
+    },
+
+    {
+      title: "Testing",
+      skills: [
+        { name: "Unit Testing", proficiency: 75, years: 2, icon: "testing" },
+        { name: "JUnit", proficiency: 70, years: 2, icon: "testing" },
+        { name: "TDD mindset", proficiency: 70, years: 2, icon: "testing" },
+        { name: "Mockito", proficiency: 65, years: 1.5, icon: "testing" },
+        { name: "MockK", proficiency: 65, years: 1.5, icon: "testing" },
+      ],
+    },
+
+    {
+      title: "Tools & Platforms",
+      skills: [
+        { name: "Gradle", proficiency: 80, years: 4, icon: "gradle" },
+        { name: "Git", proficiency: 85, years: 3, icon: "git" },
+        { name: "Git Flow", proficiency: 75, years: 2, icon: "git" },
+        { name: "Android Studio", proficiency: 85, years: 3, icon: "android" },
+        { name: "Agile", proficiency: 75, years: 2, icon: "soft-skill" },
+        { name: "Scrum", proficiency: 75, years: 2, icon: "soft-skill" },
+        { name: "Linux", proficiency: 65, years: 2, icon: "linux" },
+        { name: "Figma", proficiency: 55, years: 1, icon: "figma" },
+      ],
+    },
+
+    {
+      title: "Soft Skills",
+      skills: [
+        { name: "Analytical Thinking", proficiency: 80, years: 3, icon: "soft-skill" },
+        { name: "Problem Solving", proficiency: 85, years: 3, icon: "soft-skill" },
+        { name: "Teamwork", proficiency: 80, years: 3, icon: "soft-skill" },
+        { name: "Communication", proficiency: 75, years: 3, icon: "soft-skill" },
+      ],
+    },
+  ],
 };

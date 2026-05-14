@@ -1,30 +1,30 @@
 ---
-title: Building a Portfolio Website from Scratch with AI&colon; A Complete Development Workflow
+title: Building an Android Engineer Portfolio with AI&colon; A Practical Workflow
 date: 2025-07-19
-excerpt: How I leveraged Claude AI and Cursor AI to build a professional portfolio with complex animations in just 7 days using TDD principles, step-by-step prompts, and systematic validation cycles.
-tags: [AI Development, Claude AI, Cursor AI, TDD, Portfolio Development, Next.js, Framer Motion, Development Workflow]
+excerpt: How I adapted a polished portfolio template into a focused Android engineering site using structured content, tests, and AI-assisted iteration.
+tags: [AI Development, Portfolio Development, Next.js, Android, Kotlin, TDD, Development Workflow]
 category: AI-Assisted Development
 readingTime: 15
 published: true
 ---
-# Building a Portfolio Website from Scratch with AI: A Complete Development Workflow
+# Building an Android Engineer Portfolio with AI: A Practical Workflow
 
-*How I leveraged Claude AI and Cursor AI to build a professional portfolio (current project) with complex animations, TDD principles, and automated deployment - and what I learned about AI-assisted development.*
+*How I adapted a polished portfolio into a focused Android engineering site with structured content, tests, and automated deployment - and what I learned about AI-assisted iteration.*
 
 ---
 
 ## The Challenge: Building a Professional Portfolio in 7 Days
 
-As a senior full-stack developer, I wanted to create a portfolio that would truly showcase my technical abilities - not just another template-based site. My requirements were ambitious:
+As a senior Android engineer, I wanted a portfolio that showed the work behind my resume: Kotlin, Jetpack Compose, mobile architecture, fintech performance work, and the teaching experience that shaped how I communicate technical ideas. The requirements were practical:
 
-- **GitHub-style professional aesthetics** with custom design system
+- **GitHub-style professional aesthetics** with a custom design system
 - **Complex scroll-triggered animations** using Framer Motion
 - **TDD-driven development** with comprehensive testing
 - **Automated deployment** to GitHub Pages
 - **Blog system** with markdown support
 - **Performance-optimized** with 90+ Lighthouse scores
 
-Instead of spending weeks on this project, I decided to experiment with AI-assisted development using Claude AI for planning and Cursor AI for implementation. The result? A complete, production-ready portfolio built in just 7 focused days.
+Instead of treating the template as something to merely rename, I used AI assistance to map resume facts into a real content structure, update metadata, keep tests aligned, and preserve the strengths of the original implementation.
 
 ## The 5-Phase AI Development Strategy
 
@@ -48,7 +48,7 @@ architecture decisions, and success criteria.
 - Deployment strategy for GitHub Pages static export
 - Performance considerations for animation-heavy site
 - Clear success criteria and measurable goals
-You can see the [technical foundation here](https://github.com/attarchi/attarchi.github.io/blob/master/docs/technical-proposal.md)
+You can see the technical foundation in the repository docs: [technical proposal](https://github.com/Aliiiw/alirahimi-website/blob/main/docs/technical-proposal.md).
 
 **Key Insight:** Starting with a detailed technical proposal prevents scope creep and ensures all stakeholders (even if it's just you) understand the project boundaries.
 
@@ -74,7 +74,7 @@ with GitHub-inspired aesthetics. Include:
 - **7-section homepage layout** with detailed component patterns
 - **Responsive breakpoints** and mobile-first approach
 
-**Result:** A 40-page [design specification](https://github.com/attarchi/attarchi.github.io/blob/master/docs/design-outline-proposal.md) that became my development bible.
+**Result:** A detailed [design specification](https://github.com/Aliiiw/alirahimi-website/blob/main/docs/design-outline-proposal.md) that became the implementation guide.
 
 
 ### Phase 3: Project Breakdown & Task Planning
@@ -102,7 +102,7 @@ Each phase should have:
 8. **Optimization & Polish** (Day 7) - Performance and final touches
 
 
-The project break down is [here](https://github.com/attarchi/attarchi.github.io/blob/master/docs/project-breakdown.md)
+The project breakdown is available in the repository: [project breakdown](https://github.com/Aliiiw/alirahimi-website/blob/main/docs/project-breakdown.md).
 
 ### Phase 4: Creating Step-by-Step TDD Prompts for Cursor AI
 
@@ -399,7 +399,7 @@ Building this portfolio was my first serious experiment with AI-assisted develop
 **What's Next?**
 I'm now applying this workflow to client projects and seeing similar results. The investment in learning AI-assisted development patterns pays dividends across every subsequent project.
 
-The portfolio website is live at [attarchi.github.io](https://attarchi.github.io) - a testament to what's possible when human creativity meets AI capability.
+The portfolio website is designed to live at [alirahimi.dev](https://alirahimi.dev), with static deployment through the repository workflow.
 
 ---
 
@@ -411,4 +411,4 @@ The portfolio website is live at [attarchi.github.io](https://attarchi.github.io
 - Next.js 14, Framer Motion, Tailwind CSS
 - GitHub Actions for automated deployment
 
-**Repository:** [View the complete codebase and commit history](https://github.com/attarchi/attarchi.github.io)
+**Repository:** [View the complete codebase and commit history](https://github.com/Aliiiw/alirahimi-website)

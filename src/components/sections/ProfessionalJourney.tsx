@@ -22,11 +22,11 @@ export function ProfessionalJourney({ milestones = [] }: ProfessionalJourneyProp
   const containerRef = useRef<HTMLDivElement>(null);
 
   const sortedMilestones = [...milestones].sort((a, b) => {
-    const getYear = (date: string) => {
-      const year = date.split('-')[0];
-      return parseInt(year);
+    const getStartYear = (date: string) => {
+      const match = date.match(/\d{4}/);
+      return match ? Number(match[0]) : 0;
     };
-    return getYear(a.date) - getYear(b.date);
+    return getStartYear(b.date) - getStartYear(a.date);
   });
 
   const hasMultipleMilestones = sortedMilestones.length > 3;

@@ -14,15 +14,15 @@ jest.mock("framer-motion", () => ({
 }));
 
 const defaultProps = {
-  status: "Available for new opportunities",
-  location: "Istanbul, Turkey (UTC+3)",
-  email: "attarchi@me.com",
-  linkedinUrl: "https://linkedin.com/in/attarchi",
-  githubUrl: "https://github.com/attarchi",
+  status: "Open to senior Android opportunities",
+  location: "France (CET/CEST)",
+  email: "aliirahimioriginal@gmail.com",
+  linkedinUrl: "https://www.linkedin.com/in/alii-rahimi/",
+  githubUrl: "https://github.com/Aliiiw",
   responseTime: "Usually within 24 hours",
-  availabilityType: "Full-time, Contract, Consulting",
+  availabilityType: "Full-time Android roles, remote or relocation",
   sectionTitle: "Let's Work Together",
-  sectionSubtitle: "Available for exciting projects and opportunities",
+  sectionSubtitle: "Available for mobile engineering teams building reliable Android products",
   contactInfoTitle: "Contact Information",
   formTitle: "Send Message",
   formDescription: "Feature coming soon! This form will be available when the site goes live.",
@@ -34,7 +34,7 @@ describe("ContactSection", () => {
     
     expect(screen.getByRole("region", { name: /contact/i })).toBeInTheDocument();
     expect(screen.getByText("Let's Work Together")).toBeInTheDocument();
-    expect(screen.getByText("Available for exciting projects and opportunities")).toBeInTheDocument();
+    expect(screen.getByText("Available for mobile engineering teams building reliable Android products")).toBeInTheDocument();
   });
 
   it("displays all contact information correctly", () => {

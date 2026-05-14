@@ -30,29 +30,29 @@ describe('RootLayout', () => {
 
   describe('SEO Metadata', () => {
     it('has correct title', () => {
-      expect(metadata.title).toBe('Attarchi - Senior Full-Stack Developer | React, Node.js, Mobile')
+      expect(metadata.title).toBe('Ali Rahimi - Senior Android Engineer | Kotlin, Jetpack Compose')
     })
 
     it('has correct description', () => {
-      expect(metadata.description).toBe('Professional portfolio of Attarchi, a Senior Full-Stack Developer specializing in React, Node.js, TypeScript, and mobile app development. Based in Turkey with expertise in modern web technologies and offline-first architectures.')
+      expect(metadata.description).toBe('Professional portfolio of Ali Rahimi, a Senior Android Engineer specializing in Kotlin, Jetpack Compose, Kotlin Multiplatform readiness, Clean Architecture, and high-performance mobile apps.')
     })
 
     it('has correct keywords', () => {
-      expect(metadata.keywords).toBe('Full-Stack Developer, React, Node.js, TypeScript, Mobile Apps, Turkey, JavaScript, Frontend, Backend, Web Development, Software Engineer')
+      expect(metadata.keywords).toBe('Ali Rahimi, Senior Android Engineer, Android Developer, Kotlin, Jetpack Compose, Kotlin Multiplatform, Clean Architecture, MVVM, MVI, Mobile Apps, France')
     })
 
     it('has Open Graph metadata', () => {
       expect(metadata.openGraph).toBeDefined()
-      expect(metadata.openGraph?.title).toBe('Attarchi - Senior Full-Stack Developer | React, Node.js, Mobile')
-      expect(metadata.openGraph?.description).toContain('Senior Full-Stack Developer')
-      expect(metadata.openGraph?.url).toBe('https://attarchi.github.io')
-      expect(metadata.openGraph?.siteName).toBe('Attarchi Portfolio')
+      expect(metadata.openGraph?.title).toBe('Ali Rahimi - Senior Android Engineer | Kotlin, Jetpack Compose')
+      expect(metadata.openGraph?.description).toContain('Senior Android Engineer')
+      expect(metadata.openGraph?.url).toBe('https://alirahimi.dev')
+      expect(metadata.openGraph?.siteName).toBe('Ali Rahimi Portfolio')
     })
 
     it('has Twitter Card metadata', () => {
       expect(metadata.twitter).toBeDefined()
-      expect(metadata.twitter?.title).toBe('Attarchi - Senior Full-Stack Developer | React, Node.js, Mobile')
-      expect(metadata.twitter?.description).toContain('Senior Full-Stack Developer')
+      expect(metadata.twitter?.title).toBe('Ali Rahimi - Senior Android Engineer | Kotlin, Jetpack Compose')
+      expect(metadata.twitter?.description).toContain('Senior Android Engineer')
     })
 
     it('has canonical URL configuration', () => {

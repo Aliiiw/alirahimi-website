@@ -11,11 +11,11 @@ export interface BlogPageContent {
 
 export const blogPageContent: BlogPageContent = {
     title: "Blog",
-    description: "Thoughts on software development, architecture, and technology.",
+    description: "Notes on Android engineering, Kotlin, mobile architecture, and reliable product delivery.",
     navigation: {
         homeLink: {
             text: "← Home",
             ariaLabel: "Home"
         }
     }
-}; 
+};

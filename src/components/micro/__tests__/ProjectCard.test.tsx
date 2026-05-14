@@ -3,16 +3,16 @@ import { ProjectCard } from '../ProjectCard';
 
 describe('ProjectCard', () => {
   const defaultProps = {
-    title: 'CCPTools Ecosystem',
-    description: 'Comprehensive nutrition platform...',
+    title: 'Jahat',
+    description: 'Seller-side insurance platform...',
     technologies: [],
   };
 
   it('renders with correct content', () => {
     render(<ProjectCard {...defaultProps} />);
     
-    expect(screen.getByText('CCPTools Ecosystem')).toBeInTheDocument();
-    expect(screen.getByText('Comprehensive nutrition platform...')).toBeInTheDocument();
+    expect(screen.getByText('Jahat')).toBeInTheDocument();
+    expect(screen.getByText('Seller-side insurance platform...')).toBeInTheDocument();
   });
 
   it('accepts custom className', () => {
@@ -27,25 +27,25 @@ describe('ProjectCard', () => {
   it('maintains semantic HTML structure', () => {
     render(<ProjectCard {...defaultProps} />);
     
-    const title = screen.getByRole('heading', { name: 'CCPTools Ecosystem' });
+    const title = screen.getByRole('heading', { name: 'Jahat' });
     expect(title).toBeInTheDocument();
     
-    const description = screen.getByText('Comprehensive nutrition platform...');
+    const description = screen.getByText('Seller-side insurance platform...');
     expect(description.tagName).toBe('P');
   });
 
   describe('Technology Badges', () => {
     const propsWithTechnologies = {
       ...defaultProps,
-      technologies: ['React Native', 'Node.js', 'PostgreSQL'],
+      technologies: ['Kotlin', 'Jetpack Compose', 'Modular Architecture'],
     };
 
     it('renders technology badges when technologies are provided', () => {
       render(<ProjectCard {...propsWithTechnologies} />);
       
-      expect(screen.getByText('React Native')).toBeInTheDocument();
-      expect(screen.getByText('Node.js')).toBeInTheDocument();
-      expect(screen.getByText('PostgreSQL')).toBeInTheDocument();
+      expect(screen.getByText('Kotlin')).toBeInTheDocument();
+      expect(screen.getByText('Jetpack Compose')).toBeInTheDocument();
+      expect(screen.getByText('Modular Architecture')).toBeInTheDocument();
     });
 
     it('renders correct number of badges', () => {
@@ -54,9 +54,9 @@ describe('ProjectCard', () => {
       const badges = screen.getAllByTestId('tech-badge');
       expect(badges).toHaveLength(3);
       
-      expect(badges[0]).toHaveTextContent('React Native');
-      expect(badges[1]).toHaveTextContent('Node.js');
-      expect(badges[2]).toHaveTextContent('PostgreSQL');
+      expect(badges[0]).toHaveTextContent('Kotlin');
+      expect(badges[1]).toHaveTextContent('Jetpack Compose');
+      expect(badges[2]).toHaveTextContent('Modular Architecture');
     });
 
     it('does not render badges container when no technologies provided', () => {

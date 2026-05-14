@@ -18,11 +18,11 @@ export interface HeroContent {
 }
 
 export const heroContent: HeroContent = {
-    name: "This Is Ryan",
-    title: "Senior Full-Stack Developer & Problem Solver",
-    description: "20+ years crafting scalable web applications with React, Node.js, C#, and modern architectures. Specializing in offline-first solutions and complex problem solving.",
-    location: "Istanbul, Turkey • Remote Worldwide",
-    avatarAlt: "Profile picture",
+    name: "Ali Rahimi",
+    title: "Senior Android Engineer",
+    description: "Android engineer with 4+ years of experience building secure, scalable, and user-friendly mobile applications. I specialize in Kotlin, Jetpack Compose, modern Android architecture, and performance-focused app delivery, with growing depth in Kotlin Multiplatform, backend collaboration, and end-to-end product thinking.",
+    location: "France • Open to relocate • Remote worldwide",
+    avatarAlt: "Ali Rahimi profile picture",
     ctaButtons: [
         {
             text: "Contact Me",
@@ -36,6 +36,13 @@ export const heroContent: HeroContent = {
             link: "#projects",
             variant: "outline",
             size: "lg"
+        },
+        {
+            text: "Download CV",
+            link: "/AliRahimiCV.pdf",
+            variant: "outline",
+            size: "lg",
+            icon: "download"
         }
     ]
-}; 
+};
