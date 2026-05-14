@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { TechnicalExpertise } from "../TechnicalExpertise";
 
 jest.mock("@/lib");
@@ -78,7 +78,7 @@ describe("TechnicalExpertise", () => {
     expect(categoryCards).toHaveLength(0);
   });
 
-  describe("More Categories Functionality", () => {
+  describe("Category Visibility", () => {
     const manyCategories = [
       {
         title: "Frontend Development",
@@ -112,41 +112,8 @@ describe("TechnicalExpertise", () => {
       }
     ];
 
-    it("shows only first 4 categories initially when more than 4 categories exist", () => {
+    it("shows all categories immediately when more than 4 categories exist", () => {
       render(<TechnicalExpertise categories={manyCategories} />);
-      
-      const categoryCards = screen.getAllByTestId("category-card");
-      expect(categoryCards).toHaveLength(4);
-      
-      expect(screen.getByText("Frontend Development")).toBeInTheDocument();
-      expect(screen.getByText("Backend Development")).toBeInTheDocument();
-      expect(screen.getByText("Mobile Development")).toBeInTheDocument();
-      expect(screen.getByText("DevOps")).toBeInTheDocument();
-      expect(screen.queryByText("Database")).not.toBeInTheDocument();
-      expect(screen.queryByText("Cloud")).not.toBeInTheDocument();
-    });
-
-    it("shows 'more...' button when more than 4 categories exist", () => {
-      render(<TechnicalExpertise categories={manyCategories} />);
-      
-      const moreButton = screen.getByRole("button", { name: /more/i });
-      expect(moreButton).toBeInTheDocument();
-      expect(moreButton).toHaveTextContent("more...");
-    });
-
-    it("does not show 'more...' button when 4 or fewer categories exist", () => {
-      const fourCategories = manyCategories.slice(0, 4);
-      render(<TechnicalExpertise categories={fourCategories} />);
-      
-      const moreButton = screen.queryByRole("button", { name: /more/i });
-      expect(moreButton).not.toBeInTheDocument();
-    });
-
-    it("shows all categories when 'more...' button is clicked", () => {
-      render(<TechnicalExpertise categories={manyCategories} />);
-      
-      const moreButton = screen.getByRole("button", { name: /more/i });
-      fireEvent.click(moreButton);
       
       const categoryCards = screen.getAllByTestId("category-card");
       expect(categoryCards).toHaveLength(6);
@@ -159,13 +126,19 @@ describe("TechnicalExpertise", () => {
       expect(screen.getByText("Cloud")).toBeInTheDocument();
     });
 
-    it("hides 'more...' button after it is clicked", () => {
+    it("does not show 'more...' button when more than 4 categories exist", () => {
       render(<TechnicalExpertise categories={manyCategories} />);
       
-      const moreButton = screen.getByRole("button", { name: /more/i });
-      fireEvent.click(moreButton);
+      const moreButton = screen.queryByRole("button", { name: /more/i });
+      expect(moreButton).not.toBeInTheDocument();
+    });
+
+    it("does not show 'more...' button when 4 or fewer categories exist", () => {
+      const fourCategories = manyCategories.slice(0, 4);
+      render(<TechnicalExpertise categories={fourCategories} />);
       
-      expect(screen.queryByRole("button", { name: /more/i })).not.toBeInTheDocument();
+      const moreButton = screen.queryByRole("button", { name: /more/i });
+      expect(moreButton).not.toBeInTheDocument();
     });
   });
 }); 
