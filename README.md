@@ -2,6 +2,14 @@
 
 Personal portfolio website for Ali Rahimi, a Senior Android Engineer focused on Kotlin, Jetpack Compose, Clean Architecture, Kotlin Multiplatform readiness, and high-performance mobile applications.
 
+## Attribution
+
+This portfolio is forked and adapted from [attarchi/attarchi.github.io](https://github.com/attarchi/attarchi.github.io).
+
+All credit for the original structure, design direction, and foundation goes to the original author. I mainly customized the content, resume, photo, skills, projects, blog posts, and deployment setup for my own portfolio.
+
+Huge thanks to the original project and its author for making it available.
+
 ## Tech Stack
 
 - Next.js 14 with static export
