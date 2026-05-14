@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heading, Text, Badge, ContactForm } from "@/components/micro";
+import { Heading, Text, Badge } from "@/components/micro";
 import { slideUpVariants, fadeVariants, staggerVariants, sectionVariants } from "@/lib";
 
 export interface ContactSectionProps {
@@ -15,10 +15,6 @@ export interface ContactSectionProps {
   sectionTitle?: string;
   sectionSubtitle?: string;
   contactInfoTitle?: string;
-  formTitle?: string;
-  formDescription?: string;
-  formspreeId?: string;
-  successMessage?: string;
 }
 
 export function ContactSection({
@@ -32,10 +28,6 @@ export function ContactSection({
   sectionTitle,
   sectionSubtitle,
   contactInfoTitle,
-  formTitle,
-  formDescription,
-  formspreeId,
-  successMessage,
 }: ContactSectionProps = {}) {
   return (
     <motion.section
@@ -62,10 +54,10 @@ export function ContactSection({
           </Text>
         </div>
 
-        <div data-testid="contact-grid" className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div data-testid="contact-grid" className="max-w-3xl mx-auto">
           <motion.div 
             data-testid="contact-info-card"
-            className="bg-white dark:bg-[#21262d] border border-[#d0d7de] dark:border-[#30363d] rounded-lg p-6 shadow-sm"
+            className="bg-white dark:bg-[#21262d] border border-[#d0d7de] dark:border-[#30363d] rounded-lg p-6 md:p-8 shadow-sm"
             variants={staggerVariants}
             initial="hidden"
             animate="visible"
@@ -107,7 +99,12 @@ export function ContactSection({
                   </div>
                   <div>
                     <Text size="sm" className="font-sans text-[#656d76] dark:text-[#8b949e]">Email</Text>
-                    <Text size="base" className="font-sans text-text">{email}</Text>
+                    <a 
+                      href={`mailto:${email}`}
+                      className="hover:text-[#0969da] dark:hover:text-[#58a6ff] transition-colors"
+                    >
+                      <Text size="base" className="font-sans text-text">{email}</Text>
+                    </a>
                   </div>
                 </motion.div>
 
@@ -206,12 +203,6 @@ export function ContactSection({
               </div>
             </motion.div>
           </motion.div>
-
-          <ContactForm
-            formTitle={formTitle}
-            formspreeId={formspreeId}
-            successMessage={successMessage}
-          />
         </div>
       </div>
     </motion.section>

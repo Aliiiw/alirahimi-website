@@ -11,15 +11,12 @@ export interface ContactSectionProps {
   sectionTitle?: string;
   sectionSubtitle?: string;
   contactInfoTitle?: string;
-  formTitle?: string;
-  formDescription?: string;
 }
 
 export function ContactSection({ 
   sectionTitle = "Let's Work Together", 
   sectionSubtitle = "Available for exciting projects and opportunities",
   contactInfoTitle = "Contact Information",
-  formTitle = "Send Message",
   status = "Available for new opportunities",
   email = "test@example.com",
   linkedinUrl = "https://linkedin.com/in/test",
@@ -61,41 +58,6 @@ export function ContactSection({
             <span>Available for</span>
             <span>{availabilityType}</span>
           </div>
-        </div>
-        
-        <div data-testid="contact-form">
-          <h3>{formTitle}</h3>
-          <form>
-            <label htmlFor="name">Name</label>
-            <input 
-              type="text" 
-              id="name"
-              name="name"
-              placeholder="Your name" 
-              data-testid="contact-name-input"
-              required
-            />
-            <label htmlFor="email">Email</label>
-            <input 
-              type="email" 
-              id="email"
-              name="email"
-              placeholder="your.email@example.com" 
-              data-testid="contact-email-input"
-              required
-            />
-            <label htmlFor="message">Message</label>
-            <textarea 
-              id="message"
-              name="message"
-              placeholder="Message" 
-              data-testid="contact-message-input"
-              required
-            />
-            <button type="submit" data-testid="contact-submit-button">
-              Send Message
-            </button>
-          </form>
         </div>
       </div>
     </section>

@@ -16,16 +16,16 @@ describe('Home Page Contact Section', () => {
     expect(screen.getByTestId('contact-section')).toBeInTheDocument()
   })
 
-  it('renders contact form elements', async () => {
+  it('does not render inactive contact form elements', async () => {
     await act(async () => {
       render(await Home())
     })
     
-    expect(screen.getByTestId('contact-form')).toBeInTheDocument()
-    expect(screen.getByTestId('contact-name-input')).toBeInTheDocument()
-    expect(screen.getByTestId('contact-email-input')).toBeInTheDocument()
-    expect(screen.getByTestId('contact-message-input')).toBeInTheDocument()
-    expect(screen.getByTestId('contact-submit-button')).toBeInTheDocument()
+    expect(screen.queryByTestId('contact-form')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('contact-name-input')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('contact-email-input')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('contact-message-input')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('contact-submit-button')).not.toBeInTheDocument()
   })
 
   it('renders contact section title and description', async () => {
@@ -37,17 +37,14 @@ describe('Home Page Contact Section', () => {
     expect(screen.getByTestId('contact-description')).toBeInTheDocument()
   })
 
-  it('contact form has proper input types', async () => {
+  it('renders contact information card', async () => {
     await act(async () => {
       render(await Home())
     })
     
-    const nameInput = screen.getByTestId('contact-name-input')
-    const emailInput = screen.getByTestId('contact-email-input')
-    const messageInput = screen.getByTestId('contact-message-input')
-    
-    expect(nameInput).toHaveAttribute('type', 'text')
-    expect(emailInput).toHaveAttribute('type', 'email')
-    expect(messageInput).toHaveAttribute('placeholder', 'Message')
+    expect(screen.getByTestId('contact-info-card')).toBeInTheDocument()
+    expect(screen.getByTestId('email-contact')).toBeInTheDocument()
+    expect(screen.getByTestId('linkedin-contact')).toBeInTheDocument()
+    expect(screen.getByTestId('github-contact')).toBeInTheDocument()
   })
 }) 

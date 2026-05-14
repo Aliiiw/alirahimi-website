@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { ContactSection } from "../ContactSection";
 import { contactContent } from "@/content";
 
@@ -14,7 +14,7 @@ jest.mock("framer-motion", () => ({
 }));
 
 const defaultProps = {
-  status: "Open to senior Android opportunities",
+  status: "Open to Android opportunities",
   location: "France (CET/CEST)",
   email: "aliirahimioriginal@gmail.com",
   linkedinUrl: "https://www.linkedin.com/in/alii-rahimi/",
@@ -24,8 +24,6 @@ const defaultProps = {
   sectionTitle: "Let's Work Together",
   sectionSubtitle: "Available for mobile engineering teams building reliable Android products",
   contactInfoTitle: "Contact Information",
-  formTitle: "Send Message",
-  formDescription: "Feature coming soon! This form will be available when the site goes live.",
 };
 
 describe("ContactSection", () => {
@@ -59,9 +57,12 @@ describe("ContactSection", () => {
   it("renders social media links with correct attributes", () => {
     render(<ContactSection {...defaultProps} />);
     
+    const emailLink = screen.getByText(defaultProps.email).closest("a");
     const linkedinLink = screen.getByText(defaultProps.linkedinUrl).closest("a");
     const githubLink = screen.getByText(defaultProps.githubUrl).closest("a");
     
+    expect(emailLink).toHaveAttribute("href", `mailto:${defaultProps.email}`);
+
     expect(linkedinLink).toHaveAttribute("href", defaultProps.linkedinUrl);
     expect(linkedinLink).toHaveAttribute("target", "_blank");
     expect(linkedinLink).toHaveAttribute("rel", "noopener noreferrer");
@@ -71,48 +72,11 @@ describe("ContactSection", () => {
     expect(githubLink).toHaveAttribute("rel", "noopener noreferrer");
   });
 
-  it("renders contact form with all required fields", () => {
+  it("does not render the inactive contact form", () => {
     render(<ContactSection {...defaultProps} />);
-    
-    expect(screen.getByLabelText(/name/i)).toBeInTheDocument();
-    expect(screen.getByTestId("name-input")).toBeRequired();
-    
-    expect(screen.getByLabelText(/email/i)).toBeInTheDocument();
-    expect(screen.getByTestId("email-input")).toBeRequired();
-    expect(screen.getByTestId("email-input")).toHaveAttribute("type", "email");
-    
-    expect(screen.getByLabelText(/message/i)).toBeInTheDocument();
-    expect(screen.getByTestId("message-textarea")).toBeRequired();
-    
-    expect(screen.getByTestId("submit-button")).toBeInTheDocument();
-    expect(screen.getByTestId("submit-button")).toHaveTextContent("Send Message");
-  });
 
-  it("renders contact form with proper structure", () => {
-    render(<ContactSection {...defaultProps} />);
-    
-    const nameInput = screen.getByTestId("name-input");
-    const emailInput = screen.getByTestId("email-input");
-    const messageTextarea = screen.getByTestId("message-textarea");
-    const form = screen.getByTestId("contact-form").querySelector("form");
-    
-    expect(nameInput).toBeInTheDocument();
-    expect(emailInput).toBeInTheDocument();
-    expect(messageTextarea).toBeInTheDocument();
-    expect(form).toBeInTheDocument();
-  });
-
-  it("renders with custom form title", () => {
-    const customFormTitle = "Custom Form Title";
-    render(<ContactSection {...defaultProps} formTitle={customFormTitle} />);
-    
-    const contactForm = screen.getByTestId("contact-form");
-    expect(contactForm).toBeInTheDocument();
-    
-    // Check that the custom form title is rendered in the form
-    const formHeading = contactForm.querySelector("h3");
-    expect(formHeading).toBeInTheDocument();
-    expect(formHeading).toHaveTextContent(customFormTitle);
+    expect(screen.queryByTestId("contact-form")).not.toBeInTheDocument();
+    expect(screen.queryByText("Send Message")).not.toBeInTheDocument();
   });
 
   it("uses custom section titles when provided", () => {
@@ -121,7 +85,6 @@ describe("ContactSection", () => {
       sectionTitle: "Custom Contact Title",
       sectionSubtitle: "Custom subtitle",
       contactInfoTitle: "Custom Info Title",
-      formTitle: "Custom Form Title",
     };
     
     render(<ContactSection {...customProps} />);
@@ -129,6 +92,5 @@ describe("ContactSection", () => {
     expect(screen.getByText("Custom Contact Title")).toBeInTheDocument();
     expect(screen.getByText("Custom subtitle")).toBeInTheDocument();
     expect(screen.getByText("Custom Info Title")).toBeInTheDocument();
-    expect(screen.getByText("Custom Form Title")).toBeInTheDocument();
   });
 }); 
