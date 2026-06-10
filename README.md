@@ -130,7 +130,7 @@ The blog loader reads Markdown files from `src/content/posts`, parses frontmatte
 
 ## Recent Updates
 
-- 2026-06-10: Published "Kotlin 2.4.0: Collection Literals Are Small, but I Really Like Them" and added a practical note about the experimental compiler flag and Android Gradle Plugin requirement.
+- 2026-06-10: Published "What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades."
 
 ## Deployment
 
