@@ -6,6 +6,8 @@ tags: ["kotlin", "android", "kotlin-2-4", "multiplatform"]
 category: "Kotlin"
 published: true
 ---
+![Kotlin 2.4.0 release banner](/kotlin-release-banner.jpg)
+
 # What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades
 
 Kotlin 2.4.0 is officially here. This release focuses heavily on maturing language features that have been in preview for a while, making Multiplatform integrations significantly smoother, and introducing some highly anticipated syntax improvements.

@@ -130,7 +130,7 @@ The blog loader reads Markdown files from `src/content/posts`, parses frontmatte
 
 ## Recent Updates
 
-- 2026-06-10: Published "What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades."
+- 2026-06-10: Published "What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades" with a Kotlin release banner.
 
 ## Deployment
 
