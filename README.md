@@ -2,17 +2,16 @@
 
 Personal portfolio website for Ali Rahimi, a Senior Android Engineer focused on Kotlin, Jetpack Compose, Clean Architecture, Kotlin Multiplatform readiness, and high-performance mobile applications.
 
-The site is built as a static Next.js portfolio with an animated homepage, content-driven sections, a Markdown blog, downloadable CV, contact form, dark/light theme support, and GitHub Pages-friendly output.
+The site is built as a static Next.js portfolio with an animated homepage, content-driven sections, a Markdown blog, downloadable CV, contact details, dark/light theme support, and GitHub Pages-friendly output.
 
 ## Features
 
 - Animated hero section with profile image, typewriter text, location, and call-to-action buttons.
-- Professional journey, technical expertise, featured projects, blog preview, contact, and footer sections.
+- Professional journey, technical expertise, featured projects, blog preview, contact details, and footer sections.
 - Content-first structure under `src/content/` for easier portfolio updates.
 - Markdown-powered blog with frontmatter, reading-time calculation, category/tag metadata, and static blog routes.
 - Dark/light theme provider with localStorage persistence and system-theme fallback.
 - Framer Motion animation variants, scroll progress UI, and reusable micro components.
-- Formspree-based contact form with reCAPTCHA token support.
 - Static export configuration for GitHub Pages or other static hosting providers.
 - Jest and React Testing Library coverage for pages, components, hooks, content, and utilities.
 
@@ -24,7 +23,6 @@ The site is built as a static Next.js portfolio with an animated homepage, conte
 - Tailwind CSS
 - Framer Motion
 - Markdown via `gray-matter` and `marked`
-- Formspree contact handling
 - Jest, ts-jest, and React Testing Library
 - GitHub Pages/static hosting support
 
@@ -129,6 +127,10 @@ Write the post content here.
 ```
 
 The blog loader reads Markdown files from `src/content/posts`, parses frontmatter, generates reading time, filters unpublished posts, and creates static params for published slugs.
+
+## Recent Updates
+
+- 2026-06-10: Published "Kotlin 2.4.0: Collection Literals Are Small, but I Really Like Them" and added a practical note about the experimental compiler flag and Android Gradle Plugin requirement.
 
 ## Deployment
 
