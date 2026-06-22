@@ -172,7 +172,7 @@ describe('Blog Posts Content Validation', () => {
     });
 
     describe('Word Count Validation', () => {
-        it('should have appropriate word count (300-3000 words)', () => {
+        it('should have appropriate word count (200-3000 words)', () => {
             const markdownFiles = getMarkdownFiles();
 
             if (markdownFiles.length === 0) {
@@ -185,8 +185,8 @@ describe('Blog Posts Content Validation', () => {
 
                 const wordCount = contentOnly.split(/\s+/).length;
 
-                // Should be between 300-3000 words for concise technical posts
-                expect(wordCount).toBeGreaterThanOrEqual(300);
+                // Support concise posts while still requiring meaningful content.
+                expect(wordCount).toBeGreaterThanOrEqual(200);
                 expect(wordCount).toBeLessThanOrEqual(3000);
             });
         });

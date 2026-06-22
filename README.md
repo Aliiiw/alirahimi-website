@@ -128,8 +128,11 @@ Write the post content here.
 
 The blog loader reads Markdown files from `src/content/posts`, parses frontmatter, generates reading time, filters unpublished posts, and creates static params for published slugs.
 
+Blog content validation supports concise posts between 200 and 3,000 words.
+
 ## Recent Updates
 
+- 2026-06-22: Published "🚀 Vibe Coding vs. Agentic Engineering: Shifting from Syntax to Intent" with its comparison infographic.
 - 2026-06-10: Published "What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades" with a Kotlin release banner.
 
 ## Deployment
