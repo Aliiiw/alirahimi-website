@@ -186,7 +186,7 @@ export function HeroSection({
         >
           <div
             data-testid="scroll-indicator"
-            className="hidden sm:block absolute bottom-8 animate-bounce text-[#656d76] dark:text-[#8b949e] font-sans text-sm"
+            className="hidden sm:block mt-4 animate-bounce text-[#656d76] dark:text-[#8b949e] font-sans text-sm"
           >
             Scroll to explore ↓
           </div>

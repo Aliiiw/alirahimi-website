@@ -11,42 +11,42 @@ export const professionalMilestones: ProfessionalMilestone[] = [
   {
     id: "1",
     date: "Apr 2026 – Present",
-    role: "Senior Android Engineer",
+    role: "Senior Android Software Engineer",
     company: "Hamsaia",
     description:
-      "Building and scaling the Android application from scratch with Kotlin and Jetpack Compose while establishing a modular MVVM/MVI architecture for long-term growth.",
+      "Independently built Hamsaia's Android application from scratch and launched it on Google Play within the first four months, creating a cross-border commerce experience for customers abroad.",
     achievement:
-      "Improved app responsiveness and data flows with Coroutines and Flow; contributed to architecture, code reviews, KMP planning, and release workflows.",
+      "Defined a modular Kotlin Multiplatform codebase with Kotlin, Jetpack Compose, Clean Architecture, and MVVM/MVI; delivered 10+ production screens and improved build performance by about 10%.",
   },
   {
     id: "2",
     date: "Sep 2023 – Dec 2025",
-    role: "Android Developer",
+    role: "Android Software Engineer",
     company: "Gandom Company",
     description:
-      "Architected and maintained mission-critical fintech Android applications using Kotlin, MVI/MVVM, Clean Architecture, and secure high-performance codebases.",
+      "Developed and modernized four production Android applications for a high-volume brokerage ecosystem serving about 5 million users and handling 4-6 million daily financial transactions, API requests, and market-data operations.",
     achievement:
-      "Built reusable Compose components, optimized real-time market data flows, introduced multi-module principles, and strengthened offline-first state handling.",
+      "Migrated legacy Java/XML and MVP codebases to Kotlin, Jetpack Compose, MVVM/MVI, Clean Architecture, Retrofit, Coroutines, and Flow, reaching about 2x faster performance, 40% fewer crashes, and 20% smaller app size.",
   },
   {
     id: "3",
     date: "Mar 2023 – Aug 2023",
-    role: "Android Developer Intern",
+    role: "Android Developer Intern (Full-time)",
     company: "TrueLearn",
     description:
-      "Developed learning-focused Android features using Jetpack Compose and MVVM. Collaborated closely with UX and Product teams to refine user flows and improve maintainability.",
+      "Designed and built an end-to-end e-commerce Android application with Jetpack Compose, including product discovery, categories, shopping cart, checkout, address, authentication, profile, theming, RTL, and localization flows.",
     achievement:
-      "Enhanced UI responsiveness and state management while reinforcing clean architecture and test-driven practices.",
+      "Integrated 15 REST endpoints with Retrofit and OkHttp, structured repository-based MVVM with Hilt, Coroutines, StateFlow, Compose Navigation, Room, and encrypted DataStore session storage.",
   },
   {
     id: "4",
     date: "Sep 2022 – Mar 2023",
-    role: "Mobile Application Developer",
+    role: "Android & iOS Developer",
     company: "Tagfaa",
     description:
-      "Developed Android components for logistics and tracking systems with focus on workflow clarity, reliability, and structured codebase improvements.",
+      "Designed and developed a private Android and iOS enterprise application for a customer-service portal supporting a customer base of 300,000+ users.",
     achievement:
-      "Reduced technical debt and improved cross-team delivery consistency; supported iOS parity and product consistency.",
+      "Delivered secure account management, real-time shipment tracking, push notifications, multimedia playback, WebView flows, SVG rendering, and consistent Android/iOS functionality.",
   },
   {
     id: "5",
@@ -54,19 +54,19 @@ export const professionalMilestones: ProfessionalMilestone[] = [
     role: "Software Engineer Intern",
     company: "uMind",
     description:
-      "Contributed to AI-powered mental health mobile application, implementing mobile–backend integrations and improving app performance through clean architectural patterns.",
+      "Contributed full-time to an AI-assisted mental-health platform serving about 500 users, developing mood- and habit-tracking workflows in Flutter.",
     achievement:
-      "Improved data handling and performance while actively participating in agile rituals and technical mentorship sessions.",
+      "Integrated mobile workflows with a trained conversational model, then transitioned to backend engineering with Django REST Framework, PostgreSQL, MongoDB, authentication, and admin workflows.",
   },
   {
     id: "6",
-    date: "Nov 2020 – Sep 2025",
-    role: "Head Teaching Assistant",
-    company: "Shiraz University, CSE & IT",
+    date: "Sep 2021 – Sep 2025",
+    role: "Teaching Assistant & Android Workshop Instructor",
+    company: "Shiraz University",
     description:
-      "Led Android Programming and Software Design courses, supervised junior TAs, and mentored 100+ students in professional mobile development practices.",
+      "Served as Teaching Assistant and Head Teaching Assistant across Android Programming, Software Design, HCI, OOP, and foundational programming courses, mentoring 100+ students through labs and project reviews.",
     achievement:
-      "Organized Jetpack Compose and Kotlin workshops and directed sessions on MVVM, MVI, MVP, GoF patterns, Java OOP, C, Verilog, and Linux labs.",
+      "Led TA teams, coordinated assignments and exams, and delivered two Android and Kotlin workshops, including a 12-hour workshop for about 70 participants.",
   },
   {
     id: "7",
@@ -74,7 +74,7 @@ export const professionalMilestones: ProfessionalMilestone[] = [
     role: "B.S. Computer Science & Engineering",
     company: "Shiraz University",
     description:
-      "Completed a Computer Science and Engineering degree in Shiraz, Iran, with a GPA of 16.27 / 20.",
+      "Completed a Bachelor of Science in Computer Science and Engineering at Shiraz University.",
     achievement:
       "Built a strong foundation across programming, software design, computer architecture, systems, and applied mobile development.",
   }

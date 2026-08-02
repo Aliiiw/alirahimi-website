@@ -8,6 +8,7 @@ export interface ContactSectionProps {
   status?: string;
   location?: string;
   email?: string;
+  phone?: string;
   linkedinUrl?: string;
   githubUrl?: string;
   responseTime?: string;
@@ -21,6 +22,7 @@ export function ContactSection({
   status,
   location,
   email,
+  phone,
   linkedinUrl,
   githubUrl,
   responseTime,
@@ -107,6 +109,29 @@ export function ContactSection({
                     </a>
                   </div>
                 </motion.div>
+
+                {phone && (
+                  <motion.div
+                    className="flex items-center gap-3"
+                    variants={slideUpVariants}
+                    data-testid="phone-contact"
+                  >
+                    <div className="w-5 h-5 text-[#656d76] dark:text-[#8b949e]">
+                      <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3.5A1.5 1.5 0 013.5 2h2.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-.427 1.42l-1.018 1.018a11.05 11.05 0 004.78 4.78l1.018-1.018a1.5 1.5 0 011.42-.427l3.223.716A1.5 1.5 0 0118 14.352V16.5a1.5 1.5 0 01-1.5 1.5H15C7.82 18 2 12.18 2 5V3.5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <Text size="sm" className="font-sans text-[#656d76] dark:text-[#8b949e]">Phone</Text>
+                      <a
+                        href={`tel:${phone.replace(/\s+/g, "")}`}
+                        className="hover:text-[#0969da] dark:hover:text-[#58a6ff] transition-colors"
+                      >
+                        <Text size="base" className="font-sans text-text">{phone}</Text>
+                      </a>
+                    </div>
+                  </motion.div>
+                )}
 
                 <motion.div 
                   className="flex items-center gap-3"

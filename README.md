@@ -1,6 +1,6 @@
 # Ali Rahimi Portfolio
 
-Personal portfolio website for Ali Rahimi, a Senior Android Engineer focused on Kotlin, Jetpack Compose, Clean Architecture, Kotlin Multiplatform readiness, and high-performance mobile applications.
+Personal portfolio website for Ali Rahimi, an Android Software Engineer focused on Kotlin, Jetpack Compose, Clean Architecture, Kotlin Multiplatform readiness, and high-performance mobile applications.
 
 The site is built as a static Next.js portfolio with an animated homepage, content-driven sections, a Markdown blog, downloadable CV, contact details, dark/light theme support, and GitHub Pages-friendly output.
 
@@ -99,7 +99,7 @@ Most portfolio copy is stored in TypeScript content modules:
 - `src/content/contact.ts`
 - `src/content/footer.ts`
 
-The downloadable resume is served from `public/AliRahimiCV.pdf`. Profile images are stored in `public/avatar.jpg` and `public/avatar.png`.
+The downloadable resume is served from `public/AliRahimiCV.pdf`. The current CV file and homepage content are synced with the July 2026 Android Software Engineer resume. Profile images are stored in `public/avatar.jpg` and `public/avatar.png`.
 
 ## Adding Blog Posts
 
@@ -132,6 +132,7 @@ Blog content validation supports concise posts between 200 and 3,000 words.
 
 ## Recent Updates
 
+- 2026-08-02: Replaced the downloadable CV with the July 2026 Android Software Engineer resume and synced homepage copy, work experience, skills, projects, contact details, SEO metadata, tests, and documentation with the new CV.
 - 2026-06-22: Published "🚀 Vibe Coding vs. Agentic Engineering: Shifting from Syntax to Intent" with its comparison infographic.
 - 2026-06-10: Published "What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades" with a Kotlin release banner.
 

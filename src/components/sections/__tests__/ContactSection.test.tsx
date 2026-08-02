@@ -17,12 +17,13 @@ const defaultProps = {
   status: "Open to Android opportunities",
   location: "France (CET/CEST)",
   email: "aliirahimioriginal@gmail.com",
+  phone: "+33 6 63 25 76 43",
   linkedinUrl: "https://www.linkedin.com/in/alii-rahimi/",
   githubUrl: "https://github.com/Aliiiw",
   responseTime: "Usually within 24 hours",
-  availabilityType: "Full-time Android roles, remote or relocation",
+  availabilityType: "Android Software Engineer roles, remote or relocation",
   sectionTitle: "Let's Work Together",
-  sectionSubtitle: "Available for mobile engineering teams building reliable Android products",
+  sectionSubtitle: "Available for mobile engineering teams building reliable Android products for fintech and consumer-facing users",
   contactInfoTitle: "Contact Information",
 };
 
@@ -32,13 +33,14 @@ describe("ContactSection", () => {
     
     expect(screen.getByRole("region", { name: /contact/i })).toBeInTheDocument();
     expect(screen.getByText("Let's Work Together")).toBeInTheDocument();
-    expect(screen.getByText("Available for mobile engineering teams building reliable Android products")).toBeInTheDocument();
+    expect(screen.getByText("Available for mobile engineering teams building reliable Android products for fintech and consumer-facing users")).toBeInTheDocument();
   });
 
   it("displays all contact information correctly", () => {
     render(<ContactSection {...defaultProps} />);
     
     expect(screen.getByText(defaultProps.email)).toBeInTheDocument();
+    expect(screen.getByText(defaultProps.phone)).toBeInTheDocument();
     expect(screen.getByText(defaultProps.linkedinUrl)).toBeInTheDocument();
     expect(screen.getByText(defaultProps.githubUrl)).toBeInTheDocument();
     expect(screen.getByText(defaultProps.location)).toBeInTheDocument();
@@ -58,10 +60,12 @@ describe("ContactSection", () => {
     render(<ContactSection {...defaultProps} />);
     
     const emailLink = screen.getByText(defaultProps.email).closest("a");
+    const phoneLink = screen.getByText(defaultProps.phone).closest("a");
     const linkedinLink = screen.getByText(defaultProps.linkedinUrl).closest("a");
     const githubLink = screen.getByText(defaultProps.githubUrl).closest("a");
     
     expect(emailLink).toHaveAttribute("href", `mailto:${defaultProps.email}`);
+    expect(phoneLink).toHaveAttribute("href", "tel:+33663257643");
 
     expect(linkedinLink).toHaveAttribute("href", defaultProps.linkedinUrl);
     expect(linkedinLink).toHaveAttribute("target", "_blank");

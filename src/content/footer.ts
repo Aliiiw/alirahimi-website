@@ -2,7 +2,7 @@ export const footerContent = {
     copyright: {
         title: "Android Portfolio",
         companyName: "Ali Rahimi",
-        showcaseMessage: "Senior Android Engineer focused on Kotlin, Jetpack Compose, and scalable mobile architecture."
+        showcaseMessage: "Android Software Engineer focused on Kotlin, Jetpack Compose, Clean Architecture, and reliable native Android products."
     },
     repository: {
         title: "Source Code",
