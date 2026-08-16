@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ali Rahimi - Android Software Engineer | Kotlin, Jetpack Compose",
-  description: "Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, Kotlin Multiplatform readiness, Clean Architecture, and high-performance mobile apps.",
-  keywords: "Ali Rahimi, Android Software Engineer, Android Developer, Kotlin, Jetpack Compose, Kotlin Multiplatform, Clean Architecture, MVVM, MVI, Mobile Apps, France",
+  title: "Ali Rahimi - Android Software Engineer | Kotlin & Jetpack Compose",
+  description: "Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, modular architecture, legacy modernization, and reliable production Android apps.",
+  keywords: "Ali Rahimi, Android Software Engineer, Android Developer, Kotlin, Jetpack Compose, Kotlin Multiplatform, Clean Architecture, Modular Architecture, MVVM, MVI, Mobile Apps, France",
   authors: [{ name: "Ali Rahimi" }],
   creator: "Ali Rahimi",
   publisher: "Ali Rahimi",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Ali Rahimi - Android Software Engineer | Kotlin, Jetpack Compose",
-    description: "Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, Clean Architecture, and high-performance mobile apps.",
+    title: "Ali Rahimi - Android Software Engineer | Kotlin & Jetpack Compose",
+    description: "Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, modular architecture, and reliable production Android apps.",
     url: 'https://alirahimi.dev',
     siteName: 'Ali Rahimi Portfolio',
     locale: 'en_US',
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Ali Rahimi - Android Software Engineer | Kotlin, Jetpack Compose",
-    description: "Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, and modern Android architecture.",
+    title: "Ali Rahimi - Android Software Engineer | Kotlin & Jetpack Compose",
+    description: "Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, and modular Android architecture.",
   },
   robots: {
     index: true,

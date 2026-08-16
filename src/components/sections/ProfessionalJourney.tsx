@@ -207,6 +207,28 @@ export function ProfessionalJourney({ milestones = [] }: ProfessionalJourneyProp
   } : { height: '0%', width: '0%' };
 
   const visibleMilestones = getVisibleMilestones();
+  const renderMilestoneDetails = (milestone: ProfessionalMilestone) => (
+    <>
+      <p
+        className={`font-sans text-sm text-[#656d76] dark:text-[#8b949e] mt-4 ${
+          milestone.highlights && milestone.highlights.length > 0 ? '' : 'flex-grow'
+        }`}
+        data-testid="milestone-description"
+      >
+        {milestone.description}
+      </p>
+      {milestone.highlights && milestone.highlights.length > 0 && (
+        <ul
+          className="mt-3 flex-grow list-disc space-y-2 pl-4 font-sans text-sm text-[#656d76] dark:text-[#8b949e]"
+          data-testid="milestone-highlights"
+        >
+          {milestone.highlights.map((highlight, highlightIndex) => (
+            <li key={highlightIndex}>{highlight}</li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
 
   // Animation variants for slideshow items
   const slideshowItemVariants = {
@@ -350,7 +372,7 @@ export function ProfessionalJourney({ milestones = [] }: ProfessionalJourneyProp
                             {milestone.date}
                           </div>
                           <h3 
-                            className="font-sans text-lg font-semibold text-[#24292f] dark:text-[#f0f6fc] leading-tight h-12 flex items-start"
+                            className="font-sans text-lg font-semibold text-[#24292f] dark:text-[#f0f6fc] leading-tight min-h-12 flex items-start"
                             data-testid="milestone-role"
                           >
                             {milestone.role}
@@ -361,12 +383,7 @@ export function ProfessionalJourney({ milestones = [] }: ProfessionalJourneyProp
                           >
                             {milestone.company}
                           </div>
-                          <p 
-                            className="font-sans text-sm text-[#656d76] dark:text-[#8b949e] flex-grow mt-4"
-                            data-testid="milestone-description"
-                          >
-                            {milestone.description}
-                          </p>
+                          {renderMilestoneDetails(milestone)}
                           <motion.div 
                             className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-[#f6f8fa] dark:bg-[#21262d] text-[#24292f] dark:text-[#f0f6fc] mt-4"
                             data-testid="achievement-badge"
@@ -423,7 +440,7 @@ export function ProfessionalJourney({ milestones = [] }: ProfessionalJourneyProp
                           {milestone.date}
                         </div>
                         <h3 
-                          className="font-sans text-lg font-semibold text-[#24292f] dark:text-[#f0f6fc] leading-tight h-12 flex items-start"
+                          className="font-sans text-lg font-semibold text-[#24292f] dark:text-[#f0f6fc] leading-tight min-h-12 flex items-start"
                           data-testid="milestone-role"
                         >
                           {milestone.role}
@@ -434,12 +451,7 @@ export function ProfessionalJourney({ milestones = [] }: ProfessionalJourneyProp
                         >
                           {milestone.company}
                         </div>
-                        <p 
-                          className="font-sans text-sm text-[#656d76] dark:text-[#8b949e] flex-grow mt-4"
-                          data-testid="milestone-description"
-                        >
-                          {milestone.description}
-                        </p>
+                        {renderMilestoneDetails(milestone)}
                         <motion.div 
                           className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-[#f6f8fa] dark:bg-[#21262d] text-[#24292f] dark:text-[#f0f6fc] mt-4"
                           data-testid="achievement-badge"

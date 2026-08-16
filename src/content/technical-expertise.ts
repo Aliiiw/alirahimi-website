@@ -49,7 +49,7 @@ export const technicalExpertiseContent: TechnicalExpertiseContent = {
     },
 
     {
-      title: "Architecture",
+      title: "Architecture & Dependency Injection",
       skills: [
         { name: "MVVM", proficiency: 85, years: 4, icon: "architecture" },
         { name: "MVI", proficiency: 80, years: 3, icon: "architecture" },
@@ -78,6 +78,7 @@ export const technicalExpertiseContent: TechnicalExpertiseContent = {
         { name: "Server-Sent Events (SSE)", proficiency: 60, years: 1, icon: "api" },
         { name: "Room", proficiency: 80, years: 4, icon: "android" },
         { name: "DataStore", proficiency: 75, years: 3, icon: "android" },
+        { name: "Paging 3", proficiency: 75, years: 3, icon: "android" },
         { name: "Kotlinx Serialization", proficiency: 70, years: 2, icon: "json-schema" },
         { name: "Moshi", proficiency: 65, years: 2, icon: "json-schema" },
         { name: "Gson", proficiency: 85, years: 4, icon: "json-schema" },
@@ -141,6 +142,14 @@ export const technicalExpertiseContent: TechnicalExpertiseContent = {
         { name: "Firebase Crashlytics", proficiency: 75, years: 3, icon: "firebase" },
         { name: "Firebase Analytics", proficiency: 70, years: 2, icon: "firebase" },
         { name: "Sentry", proficiency: 70, years: 2, icon: "sentry" },
+      ],
+    },
+
+    {
+      title: "AI-Assisted Development",
+      skills: [
+        { name: "OpenAI Codex", proficiency: 75, years: 1, icon: "api" },
+        { name: "Claude Code", proficiency: 70, years: 1, icon: "soft-skill" },
       ],
     },
   ],

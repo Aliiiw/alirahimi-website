@@ -30,20 +30,20 @@ describe('RootLayout', () => {
 
   describe('SEO Metadata', () => {
     it('has correct title', () => {
-      expect(metadata.title).toBe('Ali Rahimi - Android Software Engineer | Kotlin, Jetpack Compose')
+      expect(metadata.title).toBe('Ali Rahimi - Android Software Engineer | Kotlin & Jetpack Compose')
     })
 
     it('has correct description', () => {
-      expect(metadata.description).toBe('Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, Kotlin Multiplatform readiness, Clean Architecture, and high-performance mobile apps.')
+      expect(metadata.description).toBe('Professional portfolio of Ali Rahimi, an Android Software Engineer specializing in Kotlin, Jetpack Compose, modular architecture, legacy modernization, and reliable production Android apps.')
     })
 
     it('has correct keywords', () => {
-      expect(metadata.keywords).toBe('Ali Rahimi, Android Software Engineer, Android Developer, Kotlin, Jetpack Compose, Kotlin Multiplatform, Clean Architecture, MVVM, MVI, Mobile Apps, France')
+      expect(metadata.keywords).toBe('Ali Rahimi, Android Software Engineer, Android Developer, Kotlin, Jetpack Compose, Kotlin Multiplatform, Clean Architecture, Modular Architecture, MVVM, MVI, Mobile Apps, France')
     })
 
     it('has Open Graph metadata', () => {
       expect(metadata.openGraph).toBeDefined()
-      expect(metadata.openGraph?.title).toBe('Ali Rahimi - Android Software Engineer | Kotlin, Jetpack Compose')
+      expect(metadata.openGraph?.title).toBe('Ali Rahimi - Android Software Engineer | Kotlin & Jetpack Compose')
       expect(metadata.openGraph?.description).toContain('Android Software Engineer')
       expect(metadata.openGraph?.url).toBe('https://alirahimi.dev')
       expect(metadata.openGraph?.siteName).toBe('Ali Rahimi Portfolio')
@@ -51,7 +51,7 @@ describe('RootLayout', () => {
 
     it('has Twitter Card metadata', () => {
       expect(metadata.twitter).toBeDefined()
-      expect(metadata.twitter?.title).toBe('Ali Rahimi - Android Software Engineer | Kotlin, Jetpack Compose')
+      expect(metadata.twitter?.title).toBe('Ali Rahimi - Android Software Engineer | Kotlin & Jetpack Compose')
       expect(metadata.twitter?.description).toContain('Android Software Engineer')
     })
 

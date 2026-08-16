@@ -19,8 +19,8 @@ export interface HeroContent {
 
 export const heroContent: HeroContent = {
     name: "Ali Rahimi",
-    title: "Android Software Engineer | Kotlin | Jetpack Compose",
-    description: "Android Software Engineer with 4+ years of experience building native Android applications for fintech and consumer-facing products, from greenfield development to production performance and reliability. Strong background in Kotlin, Java, Jetpack Compose, Android SDK, modular MVVM/MVI, Clean Architecture, Kotlin Coroutines and Flow, and REST/GraphQL API integration.",
+    title: "Android Software Engineer | Kotlin & Jetpack Compose",
+    description: "Android Software Engineer with 4+ years of experience building and modernizing production applications across fintech and consumer products. I specialize in Kotlin, Jetpack Compose, and modular architecture to deliver reliable, maintainable applications, modernize legacy codebases, and enable faster, safer releases.",
     location: "Based in France • Open to relocation",
     avatarAlt: "Ali Rahimi profile picture",
     ctaButtons: [

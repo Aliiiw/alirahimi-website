@@ -99,7 +99,7 @@ Most portfolio copy is stored in TypeScript content modules:
 - `src/content/contact.ts`
 - `src/content/footer.ts`
 
-The downloadable resume is served from `public/AliRahimiCV.pdf`. The current CV file and homepage content are synced with the July 2026 Android Software Engineer resume. Profile images are stored in `public/avatar.jpg` and `public/avatar.png`.
+The downloadable resume is served from `public/AliRahimiCV.pdf`. The current CV file and homepage content are synced with the August 2026 Android Software Engineer resume. Profile images are stored in `public/avatar.jpg` and `public/avatar.png`.
 
 ## Adding Blog Posts
 
@@ -132,6 +132,7 @@ Blog content validation supports concise posts between 200 and 3,000 words.
 
 ## Recent Updates
 
+- 2026-08-16: Replaced the downloadable CV with the August 16, 2026 resume, added position-specific work highlights, refreshed project descriptions, expanded technical skills with Paging 3 and AI-assisted development, and updated SEO metadata.
 - 2026-08-02: Replaced the downloadable CV with the July 2026 Android Software Engineer resume and synced homepage copy, work experience, skills, projects, contact details, SEO metadata, tests, and documentation with the new CV.
 - 2026-06-22: Published "🚀 Vibe Coding vs. Agentic Engineering: Shifting from Syntax to Intent" with its comparison infographic.
 - 2026-06-10: Published "What's New in Kotlin 2.4.0: Collection Literals, Stable Context Parameters, and iOS/Wasm Upgrades" with a Kotlin release banner.
